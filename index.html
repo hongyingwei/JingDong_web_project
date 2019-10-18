@@ -711,6 +711,10 @@
          </ul>
          <div id="item_Information"></div>
      </div>
+     <!--商品第二栏-->
+     <div class="w product2">
+
+     </div>
      <!--页面底部分-->
      <footer>
          <!--上边部分-->
@@ -866,7 +870,7 @@
              begin.setAttribute("class", "current");
          }
          /*开启图片定时器*/
-         var time = setInterval(f1, 2000);
+         var time = setInterval(f1, 1000);
          /*鼠标进入清除定时器*/
          my$("gdc-2").children[0].onmouseover = function () {
             clearInterval(time);
@@ -880,7 +884,7 @@
                      break;
                  }
              }
-             time = setInterval(f1, 2000);
+             time = setInterval(f1, 1000);
          };
          /*小圆圈控制图片移动*/
          for(var i= 0; i<circles.length; i++){

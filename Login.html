@@ -10,16 +10,11 @@
           source="widget"/>
     <link type="text/css" rel="stylesheet" href="css/tinyscrollbar-170524.css">
     <script type="text/javascript" src="js/jquery-1.12.1.js"></script>
-    <script type="text/javascript" src="js/3dee3dd38705418cad1d5de5d8b31c78.js"></script>
-    <script type="text/javascript" src="js/jdslide.1.0.min.js"></script>
-    <script type="text/javascript" src="js/common_login_v20180829.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            window.SysConfig = {
-                encryptInfo: true
-            };
-        });
-    </script>
+    <style>
+        .mc {
+            display: block;
+        }
+    </style>
 </head>
 <body>
 <!-- SDK 登录 -->
@@ -42,69 +37,24 @@
                 <div class="login-tab login-tab-r">
                     <a href="javascript:void(0)" clstag="pageclick|keycount|login_pc_201804112|10">账户登录</a>
                 </div>
+
                 <div class="login-box">
                     <div class="mt tab-h">
                     </div>
                     <div class="msg-wrap">
                         <div class="msg-error hide"><b></b></div>
                     </div>
-                    <div class="mc">
+                    <div class="mc_My">
                         <div class="form">
                             <form id="formlogin" method="post" onsubmit="return false;">
-                                <input type="hidden" id="sa_token" name="sa_token"
-                                       value="B68C442BE645754F33277E70120805905FD5D8F2D54C27850BEC2F8435BC1BC8631936F773079B74E55B556EAE6FAF489CB7F4B2343957FE644307BBD4DC353B8F2C7E865E54B9E33A2D42CDA8CDC8B3F38FBAF150E6B84AAA90E8FD74A438006E64A3CD673AF1DDBEBDA84268DAE43DCC1E56AEBAA2492651178E56EB9A9621119AD8491166875C617C9989418C949BC3A78B30D37890EFC827F7383D0C77272EE8F7B68180A17EF8F4CE3F76485B1DFE6ED764B9F19D0924F2C86DDE3F4532"/>
-                                <input type="hidden" id="uuid" name="uuid"
-                                       value="afaea01b-a806-4ad3-a42b-a6c0e979ae76"/>
-                                <input type="hidden" name="eid" id="eid" value="" class="hide"/>
-                                <input type="hidden" name="fp" id="sessionId" value="" class="hide"/>
-                                <input type="hidden" name="_t" id="token" value="_t" class="hide"/>
-                                <input type="hidden" name="loginType" id="loginType" value="c" class="hide"/>
-                                <input type="hidden" name="main_flag" id="main_flag" value="main_flag" class="hide"/>
-                                <input type="hidden" name="pubKey" id="pubKey"
-                                       value="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDC7kw8r6tq43pwApYvkJ5laljaN9BZb21TAIfT/vexbobzH7Q8SUdP5uDPXEBKzOjx2L28y7Xs1d9v3tdPfKI2LR7PAzWBmDMn8riHrDDNpUpJnlAGUqJG9ooPn8j7YNpcxCa1iybOlc2kEhmJn5uwoanQq+CA6agNkqly2H4j6wIDAQAB"
-                                       class="hide"/>
-                                <input type="hidden" id="slideAppId" value="1604ebb2287" class="hide">
-                                <input type="hidden" name="useSlideAuthCode" id="useSlideAuthCode" value="1"
-                                       class="hide">
                                 <div class="item item-fore1">
-                                    <label for="loginname" class="login-label name-label"></label>
-                                    <input id="loginname" type="text" class="itxt" name="loginname" tabindex="1"
-                                           autocomplete="off"
-                                           value=""
-                                           placeholder="邮箱/用户名/登录手机"/>
-                                    <span class="clear-btn"></span>
-                                </div>
-
-                                <div id="entry" class="item item-fore2">
-                                    <label class="login-label pwd-label" for="nloginpwd"></label>
-                                    <input type="password" id="nloginpwd" name="nloginpwd" class="itxt itxt-error"
-                                           tabindex="2" autocomplete="off" placeholder="密码"/>
-                                    <span class="clear-btn"></span>
-                                    <span class="capslock"><b></b>大小写锁定已打开</span>
-                                </div>
-
-
-                                <div id="o-authcode"
-                                     class="item item-vcode item-fore3  hide ">
-                                    <input id="authcode" type="text" class="itxt itxt02" name="authcode"
-                                           tabindex="3">
-                                    <img id="JD_Verification1" class="verify-code"
-                                         clstag="pageclick|keycount|login_pc_201804112|14"
-                                         src2="//authcode.jd.com/verify/image?srcid=passport&amp;a=1&amp;acid=afaea01b-a806-4ad3-a42b-a6c0e979ae76&amp;uid=afaea01b-a806-4ad3-a42b-a6c0e979ae76"
-                                         onclick="this.src= document.location.protocol +'//authcode.jd.com/verify/image?srcid=passport&amp;a=1&amp;acid=afaea01b-a806-4ad3-a42b-a6c0e979ae76&amp;uid=afaea01b-a806-4ad3-a42b-a6c0e979ae76&amp;yys='+new Date().getTime();$('#authcode').val('');"/>
-                                    <a href="javascript:void(0)" onclick="$('#JD_Verification1').click();"
-                                       clstag="pageclick|keycount|login_pc_201804112|14">看不清换一张</a>
-                                </div>
-
-                                <div class="item item-fore4">
-                                    <div class="safe">
-                                        <span></span>
-                                        <span class="forget-pw-safe">
-											<a href="//passport.jd.com/uc/links?tag=safe" class="" target="_blank"
-                                               clstag="pageclick|keycount|login_pc_201804112|6">忘记密码</a>
-										</span>
-                                    </div>
-                                </div>
+                                <label for="login_name" class="login-label name-label"></label>
+                                <input id="login_name" type="text" class="itxt" name="login_name" tabindex="1"
+                                       autocomplete="off"
+                                       value=""
+                                       placeholder="邮箱/用户名/登录手机"/>
+                                <span class="clear-btn"></span>
+                            </div>
 
                                 <div class="item item-fore5">
                                     <div class="login-btn">
@@ -199,7 +149,7 @@
                 联系我们
             </a>
             |
-            <a rel="nofollow" href="javascript:void(0)/">
+            <a rel="nofollow" href="javascript:void(0)">
                 人才招聘
             </a>
             |
@@ -238,32 +188,5 @@
         </div>
     </div>
 </div>
-<script type="text/javascript" src="js/login_base.js"></script>
-<script type="text/javascript" src="js/jdjsencrypt.min.js"></script>
-<script type="text/javascript" src="js/login2016.js"></script>
-<script type="text/javascript" src="js/login.index.2018-0827.js" source="widget" charset="utf-8"></script>
-
-<script type="text/javascript">
-    (function () {
-        var ja = document.createElement('script');
-        ja.type = 'text/javascript';
-        ja.async = true;
-        ja.src = "#";
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ja, s);
-    })();
-</script>
-
-<!-- SDK 登录-->
 </body>
-<script type="text/javascript">
-    (function () {
-        var ja = document.createElement('script');
-        ja.type = 'text/javascript';
-        ja.async = true;
-        ja.src = "#";
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ja, s);
-    })();
-</script>
 </html>

@@ -1,3 +1,5 @@
+
+body {overflow-x:hidden;}
 /*中间分类部分开始*/
 .grid {
     height: 480px;
@@ -382,3 +384,13 @@
     margin: 0 auto;
     margin-bottom: 10px;
 }
+
+
+/*中间商品：开始*/
+.product2{
+    background: ;
+}
+
+
+
+/*中间商品：结束*/

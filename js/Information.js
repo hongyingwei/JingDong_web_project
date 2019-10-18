@@ -113,7 +113,7 @@ function animate(element, attr, target) {  /*target是从开始到这个位置�
             current +=step;
         }
 
-        if (Math.abs(current - target) > Math.abs(step)) {
+        if(Math.abs(current - target) > Math.abs(step)) {
             element.style[attr] = current + "px";
         } else {
             if(target==-1192){
