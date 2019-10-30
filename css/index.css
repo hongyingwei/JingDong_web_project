@@ -388,7 +388,16 @@ body {overflow-x:hidden;}
 
 /*中间商品：开始*/
 .product2{
-    background: ;
+    background: url("../images/back_img .png") no-repeat;
+    width: 1306px;
+    height: 580px;
+    margin-top: 25px;
+    box-sizing: border-box;
+    padding: 10px 60px 30px 246px;
+}
+.product2 ul li{
+    float: left;
+    margin: 5px 5px 2px;
 }
 
 
